@@ -1,1 +1,1 @@
-# blog-gatsby-graphcms
+# Blog built with Gatsby and GraphCMS
