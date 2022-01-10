@@ -2,7 +2,7 @@ module.exports = {
 	env: {
 		browser: true,
 		es6: true,
-		node: true
+		node: true,
 	},
 	extends: ['eslint:recommended', 'plugin:react/recommended'],
 	parserOptions: {
@@ -10,8 +10,8 @@ module.exports = {
 		sourceType: 'module',
 		ecmaFeatures: {
 			jsx: true,
-			modules: true
-		}
+			modules: true,
+		},
 	},
 	rules: {
 		indent: ['error', 'tab'],
@@ -19,23 +19,22 @@ module.exports = {
 		'linebreak-style': ['error', 'unix'],
 		quotes: ['error', 'single'],
 		'eol-last': ['error', 'always'],
-		'max-len': ['error', 160],
+		'max-len': ['error', 120],
 		'max-statements-per-line': [
 			'error',
 			{
-				max: 1
-			}
+				max: 1,
+			},
 		],
 		'space-infix-ops': 'error',
 		'space-unary-ops': [
 			'error',
 			{
 				words: true,
-				nonwords: false
-			}
+				nonwords: false,
+			},
 		],
 		'spaced-comment': ['error', 'always'],
-		'comma-dangle': ['error', 'never'],
-		'react/prop-types': 0
-	}
+		'react/prop-types': 0,
+	},
 };

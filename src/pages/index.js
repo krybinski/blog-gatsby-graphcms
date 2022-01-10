@@ -1,18 +1,21 @@
 import React from 'react';
-import { graphql, useStaticQuery, Link } from 'gatsby';
+import {graphql, useStaticQuery, Link} from 'gatsby';
+import Layout from '../components/Layout';
 
 const IndexPage = () => {
-	const { blog: { posts } } = useStaticQuery( postsQuery );
+	const {
+		blog: {posts},
+	} = useStaticQuery(postsQuery);
 
 	return (
-		<div>
-			{posts.map(({ id, title, slug }) => (
+		<Layout>
+			{posts.map(({id, title, slug}) => (
 				<div key={id}>
 					<h2>{title}</h2>
 					<Link to={slug}>Link</Link>
 				</div>
 			))}
-		</div>
+		</Layout>
 	);
 };
 

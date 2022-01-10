@@ -7,8 +7,8 @@ module.exports = {
 			options: {
 				typeName: 'Blog',
 				fieldName: 'blog',
-				url: process.env.GRAPHCMS_ENDPOINT
-			}
-		}
-	]
+				url: process.env.GRAPHCMS_ENDPOINT,
+			},
+		},
+	],
 };
