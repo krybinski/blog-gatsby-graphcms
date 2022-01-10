@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
 	plugins: [
 		{
@@ -5,7 +7,7 @@ module.exports = {
 			options: {
 				typeName: 'Blog',
 				fieldName: 'blog',
-				url: 'YOUR_API_URL'
+				url: process.env.GRAPHCMS_ENDPOINT
 			}
 		}
 	]

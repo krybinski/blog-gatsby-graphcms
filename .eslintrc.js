@@ -18,7 +18,6 @@ module.exports = {
 		'no-tabs': 0,
 		'linebreak-style': ['error', 'unix'],
 		quotes: ['error', 'single'],
-		semi: ['error', 'always'],
 		'eol-last': ['error', 'always'],
 		'max-len': ['error', 160],
 		'max-statements-per-line': [
@@ -27,17 +26,7 @@ module.exports = {
 				max: 1
 			}
 		],
-		'semi-spacing': [
-			'error',
-			{
-				before: false,
-				after: true
-			}
-		],
-		'space-before-blocks': ['error', 'always'],
-		'space-before-function-paren': ['error', 'never'],
 		'space-infix-ops': 'error',
-		'space-in-parens': ['error', 'always'],
 		'space-unary-ops': [
 			'error',
 			{
