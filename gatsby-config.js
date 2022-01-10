@@ -10,5 +10,6 @@ module.exports = {
 				url: process.env.GRAPHCMS_ENDPOINT,
 			},
 		},
+		'gatsby-plugin-sass',
 	],
 };
