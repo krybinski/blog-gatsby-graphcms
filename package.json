@@ -7,13 +7,8 @@
     "develop": "gatsby develop",
     "clean": "gatsby clean"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/krybinski/blog-gatsby-graphcms.git"
-  },
   "author": "Kamil Rybinski",
   "license": "MIT",
-  "homepage": "https://github.com/krybinski/blog-gatsby-graphcms#readme",
   "dependencies": {
     "gatsby": "4.4.0",
     "gatsby-source-graphql": "4.4.0",
