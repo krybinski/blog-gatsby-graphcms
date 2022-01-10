@@ -1,6 +1,7 @@
 import React from 'react';
 import {graphql, useStaticQuery, Link} from 'gatsby';
 import Layout from '../components/Layout';
+import Seo from '../components/Seo';
 import '../scss/main.scss';
 
 const IndexPage = () => {
@@ -10,6 +11,8 @@ const IndexPage = () => {
 
 	return (
 		<Layout>
+			<Seo title="Home page" description="Kamil Rybinski blog" />
+
 			{posts.map(({id, title, slug}) => (
 				<div key={id}>
 					<h2>{title}</h2>
