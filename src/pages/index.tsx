@@ -11,7 +11,7 @@ const IndexPage = () => {
 
 	return (
 		<Layout>
-			<Seo title="Home page" description="Kamil Rybinski blog" />
+			<Seo title="Home" />
 
 			{posts.map(({id, title, slug}) => (
 				<div key={id}>

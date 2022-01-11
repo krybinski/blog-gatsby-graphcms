@@ -8,11 +8,11 @@ require('ts-node').register({
 
 module.exports = {
 	siteMetadata: {
-		title: 'Wondrous World of Whale Watching',
+		title: 'Fronte Blog',
 		description: 'Come and enjoy an experience of a lifetime! Watch whales with us!',
-		// author: '@krybinski',
-		// keywords: 'whales, marine life, trip, recreation',
-		// image: 'src/images/whale-watching.jpg',
+		author: '@krybinski',
+		keywords: 'whales, marine life, trip, recreation',
+		image: 'src/images/whale-watching.jpg',
 	},
 	plugins: [
 		{
