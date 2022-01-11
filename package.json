@@ -1,5 +1,6 @@
 {
   "name": "blog-gatsby-graphcms",
+  "description": "A simple starter to start developing blog with Gatsby and GraphCMS",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -27,6 +28,7 @@
     "eslint": "8.6.0",
     "gatsby-plugin-sass": "5.4.0",
     "prettier": "2.5.1",
-    "sass": "1.47.0"
+    "sass": "1.47.0",
+    "typescript": "4.5.4"
   }
 }

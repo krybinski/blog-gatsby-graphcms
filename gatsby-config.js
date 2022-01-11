@@ -1,5 +1,4 @@
 require('dotenv').config();
-
 require('ts-node').register({
 	compilerOptions: {
 		module: 'commonjs',
@@ -8,6 +7,13 @@ require('ts-node').register({
 });
 
 module.exports = {
+	siteMetadata: {
+		title: 'Wondrous World of Whale Watching',
+		description: 'Come and enjoy an experience of a lifetime! Watch whales with us!',
+		// author: '@krybinski',
+		// keywords: 'whales, marine life, trip, recreation',
+		// image: 'src/images/whale-watching.jpg',
+	},
 	plugins: [
 		{
 			resolve: 'gatsby-source-graphql',
@@ -19,5 +25,13 @@ module.exports = {
 		},
 		'gatsby-plugin-sass',
 		'gatsby-plugin-react-helmet',
+		{
+			resolve: 'gatsby-plugin-typescript',
+			options: {
+				isTSX: true,
+				jsxPragma: 'jsx',
+				allExtensions: true,
+			},
+		},
 	],
 };
