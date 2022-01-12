@@ -1,5 +1,6 @@
 {
   "name": "blog-gatsby-graphcms",
+  "description": "A simple starter to start developing blog with Gatsby and GraphCMS",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,22 +11,24 @@
   "author": "Kamil Rybinski",
   "license": "MIT",
   "dependencies": {
-    "gatsby": "4.4.0",
-    "gatsby-plugin-react-helmet": "5.4.0",
-    "gatsby-source-graphql": "4.4.0",
+    "gatsby": "4.5.0",
+    "gatsby-source-graphql": "4.5.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-helmet": "6.1.0"
+    "react-helmet": "6.1.0",
+    "ts-node": "10.4.0"
   },
   "devDependencies": {
     "@types/node": "17.0.8",
     "@types/react": "17.0.38",
     "@types/react-dom": "17.0.11",
     "@types/react-helmet": "6.1.5",
-    "dotenv": "10.0.0",
+    "dotenv": "11.0.0",
     "eslint": "8.6.0",
-    "gatsby-plugin-sass": "5.4.0",
+    "gatsby-plugin-react-helmet": "5.5.0",
+    "gatsby-plugin-sass": "5.5.0",
     "prettier": "2.5.1",
-    "sass": "1.47.0"
+    "sass": "1.47.0",
+    "typescript": "4.5.4"
   }
 }

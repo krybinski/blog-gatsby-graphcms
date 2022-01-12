@@ -14,3 +14,7 @@ insert_final_newline = true
 [*.{json,yml}]
 indent_style = space
 indent_size = 2
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false

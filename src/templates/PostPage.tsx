@@ -1,8 +1,15 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
+import {Post} from '../types';
 
-const PostPage = ({pageContext: {post}}) => {
+interface Props {
+	pageContext: {
+		post: Post;
+	};
+}
+
+const PostPage: React.FC<Props> = ({pageContext: {post}}) => {
 	return (
 		<Layout>
 			<Seo title={post.title} description="Post description here" />
