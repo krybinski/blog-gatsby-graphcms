@@ -1,21 +1,9 @@
 import * as path from 'path';
 import {GatsbyNode} from 'gatsby';
-
-type TypePost = {
-	id: string;
-	title: string;
-	slug: string;
-	content: string;
-};
-
-type TypeData = {
-	blog: {
-		posts: TypePost[];
-	};
-};
+import {PostsData} from '../types';
 
 export const createPages: GatsbyNode['createPages'] = async ({graphql, actions: {createPage}}) => {
-	const {data} = await graphql<TypeData>(`
+	const {data} = await graphql<PostsData>(`
 		query PostsQuery {
 			blog {
 				posts {
@@ -31,7 +19,7 @@ export const createPages: GatsbyNode['createPages'] = async ({graphql, actions: 
 
 	// Create Post Pages
 	const postTemplate = path.resolve('./src/templates/PostPage.tsx');
-	const createPostPromise = data?.blog.posts.map((post: TypePost) => {
+	const createPostPromise = data?.blog.posts.map((post) => {
 		createPage({
 			path: `/${post.slug}`,
 			component: postTemplate,
