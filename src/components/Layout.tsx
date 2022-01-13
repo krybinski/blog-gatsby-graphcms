@@ -7,10 +7,10 @@ interface Props {
 
 const Layout: React.FC<Props> = ({children}) => {
 	return (
-		<div>
+		<>
 			<Navbar />
 			{children}
-		</div>
+		</>
 	);
 };
 

@@ -12,3 +12,9 @@ export type PostsData = {
 		posts: Post[];
 	};
 };
+
+export type NavLink = {
+	id: number;
+	text: string;
+	url: string;
+};
