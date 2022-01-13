@@ -2,7 +2,7 @@ import React from 'react';
 import {graphql, useStaticQuery, Link} from 'gatsby';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
-import '../scss/main.scss';
+import '../assets/scss/main.scss';
 
 type TypePost = {
 	id: string;
