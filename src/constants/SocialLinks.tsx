@@ -1,7 +1,8 @@
 import React from 'react';
-import {FaFacebookSquare, FaLinkedin, FaDribbbleSquare, FaBehanceSquare, FaTwitterSquare} from 'react-icons/fa';
+import { FaFacebookSquare, FaLinkedin, FaDribbbleSquare, FaBehanceSquare, FaTwitterSquare } from 'react-icons/fa';
+import { SocialLink } from '../types';
 
-const data = [
+const data: SocialLink[] = [
 	{
 		id: 1,
 		icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
@@ -29,4 +30,16 @@ const data = [
 	},
 ];
 
-export default data;
+const links = data.map((link) => {
+	return (
+		<li key={link.id}>
+			<a href={link.url} className="social-link">
+				{link.icon}
+			</a>
+		</li>
+	);
+});
+
+export default ({ styleClass }) => {
+	return <ul className={`social-links ${styleClass ? styleClass : ''}`}>{links}</ul>;
+};

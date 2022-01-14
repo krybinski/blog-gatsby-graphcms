@@ -18,3 +18,9 @@ export type NavLink = {
 	text: string;
 	url: string;
 };
+
+export type SocialLink = {
+	id: number;
+	icon: JSX.Element;
+	url: string;
+};

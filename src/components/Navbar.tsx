@@ -1,10 +1,10 @@
 import React from 'react';
-import {FaAlignRight} from 'react-icons/fa';
+import { FaAlignRight } from 'react-icons/fa';
 import PageLinks from '../constants/PageLinks';
 
 const Navbar = () => {
 	return (
-		<div className="navbar">
+		<nav className="navbar">
 			<div className="nav-center">
 				<div className="nav-header">
 					<img src="" className="logo" />
@@ -14,7 +14,7 @@ const Navbar = () => {
 				</div>
 				<PageLinks styleClass="nav-links"></PageLinks>
 			</div>
-		</div>
+		</nav>
 	);
 };
 
