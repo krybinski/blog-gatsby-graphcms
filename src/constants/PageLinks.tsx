@@ -13,16 +13,6 @@ const data: NavLink[] = [
 		text: 'about',
 		url: '/about',
 	},
-	{
-		id: 3,
-		text: 'projects',
-		url: '/projects',
-	},
-	{
-		id: 5,
-		text: 'contact',
-		url: '/contact',
-	},
 ];
 
 const links = data.map((link) => {
@@ -33,6 +23,12 @@ const links = data.map((link) => {
 	);
 });
 
-export default ({ styleClass }) => {
+interface Props {
+	styleClass: string;
+}
+
+const PageLinks: React.FC<Props> = ({ styleClass }) => {
 	return <ul className={`page-links ${styleClass ? styleClass : ''}`}>{links}</ul>;
 };
+
+export default PageLinks;

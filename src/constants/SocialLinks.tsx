@@ -40,6 +40,12 @@ const links = data.map((link) => {
 	);
 });
 
-export default ({ styleClass }) => {
+interface Props {
+	styleClass: string;
+}
+
+const SocialLinks: React.FC<Props> = ({ styleClass }) => {
 	return <ul className={`social-links ${styleClass ? styleClass : ''}`}>{links}</ul>;
 };
+
+export default SocialLinks;

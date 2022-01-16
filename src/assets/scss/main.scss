@@ -6,3 +6,8 @@
 @import './globals/_variables.scss';
 
 @import './modules/navbar.scss';
+@import './modules/social-links.scss';
+
+#gatsby-focus-wrapper {
+	padding-top: 7rem;
+}

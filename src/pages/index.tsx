@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
+import Hero from '../components/Hero';
 import { PostsData } from '../types';
 import '../assets/scss/main.scss';
 
@@ -23,6 +24,7 @@ const IndexPage = () => {
 	return (
 		<Layout>
 			<Seo title="Home" />
+			<Hero />
 
 			{posts.map(({ id, title, slug }) => (
 				<div key={id}>
