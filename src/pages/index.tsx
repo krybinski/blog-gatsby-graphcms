@@ -1,26 +1,15 @@
 import React from 'react';
-import {graphql, useStaticQuery, Link} from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
-import '../scss/main.scss';
-
-type TypePost = {
-	id: string;
-	title: string;
-	slug: string;
-	content: string;
-};
-
-type TypeData = {
-	blog: {
-		posts: TypePost[];
-	};
-};
+import Hero from '../components/Hero';
+import { PostsData } from '../types';
+import '../assets/scss/main.scss';
 
 const IndexPage = () => {
 	const {
-		blog: {posts},
-	} = useStaticQuery<TypeData>(graphql`
+		blog: { posts },
+	} = useStaticQuery<PostsData>(graphql`
 		query PostsQuery {
 			blog {
 				posts {
@@ -35,8 +24,9 @@ const IndexPage = () => {
 	return (
 		<Layout>
 			<Seo title="Home" />
+			<Hero />
 
-			{posts.map(({id, title, slug}) => (
+			{posts.map(({ id, title, slug }) => (
 				<div key={id}>
 					<h2>{title}</h2>
 					<Link to={slug}>Link</Link>

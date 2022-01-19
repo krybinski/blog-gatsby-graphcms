@@ -1,6 +1,6 @@
 import * as React from 'react';
-import {Helmet} from 'react-helmet';
-import {useStaticQuery, graphql} from 'gatsby';
+import { Helmet } from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
 
 type MetaProps = JSX.IntrinsicElements['meta'];
 
@@ -11,8 +11,8 @@ interface Props {
 	title: string;
 }
 
-const Seo: React.FC<Props> = ({description, lang, meta, title}) => {
-	const {site} = useStaticQuery(
+const Seo: React.FC<Props> = ({ description, lang, meta, title }) => {
+	const { site } = useStaticQuery(
 		graphql`
 			query {
 				site {

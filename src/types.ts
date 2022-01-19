@@ -12,3 +12,15 @@ export type PostsData = {
 		posts: Post[];
 	};
 };
+
+export type NavLink = {
+	id: number;
+	text: string;
+	url: string;
+};
+
+export type SocialLink = {
+	id: number;
+	icon: JSX.Element;
+	url: string;
+};

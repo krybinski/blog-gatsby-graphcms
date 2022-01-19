@@ -1,9 +1,9 @@
 import * as path from 'path';
-import {GatsbyNode} from 'gatsby';
-import {PostsData} from '../types';
+import { GatsbyNode } from 'gatsby';
+import { PostsData } from '../types';
 
-export const createPages: GatsbyNode['createPages'] = async ({graphql, actions: {createPage}}) => {
-	const {data} = await graphql<PostsData>(`
+export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions: { createPage } }) => {
+	const { data } = await graphql<PostsData>(`
 		query PostsQuery {
 			blog {
 				posts {
