@@ -17,6 +17,7 @@ export type NavLink = {
 	id: number;
 	text: string;
 	url: string;
+	last: boolean;
 };
 
 export type SocialLink = {

@@ -1,21 +1,17 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import { FaAlignRight } from 'react-icons/fa';
-import PageLinks from '../constants/PageLinks';
+import React, { useState } from 'react';
+import NavLogo from './NavLogo';
+import MobileMenu from './MobileMenu';
+import MobileButton from './MobileButton';
 
 const Navbar = () => {
+	const [isOpen, setIsOpen] = useState(false);
+
 	return (
-		<nav className="navbar">
-			<div className="nav-center">
-				<div className="nav-header">
-					<Link to="/">
-						<span className="logo">Fronte</span>
-					</Link>
-					<button type="button" className="toggle-btn">
-						<FaAlignRight></FaAlignRight>
-					</button>
-				</div>
-				<PageLinks styleClass="nav-links"></PageLinks>
+		<nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800">
+			<div className="container flex flex-wrap justify-between items-center mx-auto">
+				<NavLogo />
+				<MobileButton isOpen={isOpen} toggle={(value) => setIsOpen(value)} />
+				<MobileMenu isOpen={isOpen} />
 			</div>
 		</nav>
 	);
