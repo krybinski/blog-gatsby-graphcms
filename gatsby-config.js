@@ -23,7 +23,6 @@ module.exports = {
 				url: process.env.GRAPHCMS_ENDPOINT,
 			},
 		},
-		'gatsby-plugin-sass',
 		'gatsby-plugin-react-helmet',
 		{
 			resolve: 'gatsby-plugin-typescript',
