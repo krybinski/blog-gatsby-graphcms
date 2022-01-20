@@ -1,36 +1,32 @@
 import React from 'react';
-import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
+import SocialLinkItem from './SocialLinkItem';
+import { FaLinkedin, FaGithubSquare, FaPinterestSquare } from 'react-icons/fa';
 import { SocialLink } from '../types';
 
 const data: SocialLink[] = [
 	{
 		id: 1,
-		icon: <FaLinkedin className="social-icon"></FaLinkedin>,
+		icon: <FaLinkedin className="text-white"></FaLinkedin>,
 		url: 'https://pl.linkedin.com/in/kamil-rybinski-346b99b1',
 	},
 	{
 		id: 2,
-		icon: <FaGithubSquare className="social-icon"></FaGithubSquare>,
+		icon: <FaGithubSquare className="text-white"></FaGithubSquare>,
 		url: 'https://github.com/krybinski',
+	},
+	{
+		id: 3,
+		icon: <FaPinterestSquare className="text-white"></FaPinterestSquare>,
+		url: 'https://pl.pinterest.com/kamilryba19',
 	},
 ];
 
-const links = data.map((link) => {
-	return (
-		<li key={link.id}>
-			<a href={link.url} className="social-link">
-				{link.icon}
-			</a>
-		</li>
-	);
-});
+const links = data.map((link) => <SocialLinkItem link={link} />);
 
-interface Props {
-	styleClass: string;
-}
+interface Props {}
 
-const SocialLinks: React.FC<Props> = ({ styleClass }) => {
-	return <ul className={`social-links ${styleClass ? styleClass : ''}`}>{links}</ul>;
+const SocialLinks: React.FC<Props> = () => {
+	return <ul className="flex space-x-3 mb-3">{links}</ul>;
 };
 
 export default SocialLinks;
