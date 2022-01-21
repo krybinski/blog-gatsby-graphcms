@@ -15,6 +15,12 @@ const data: NavLink[] = [
 		url: '/about',
 		last: true,
 	},
+	{
+		id: 3,
+		text: 'Contact',
+		url: '/contact',
+		last: true,
+	},
 ];
 
 const links = data.map((link) => <MobileMenuLink link={link} />);

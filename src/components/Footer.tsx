@@ -8,7 +8,7 @@ const Footer: React.FC<Props> = () => {
 
 	return (
 		<footer className="bg-white border-gray-200 px-2 sm:px-4 py-6 dark:bg-gray-700">
-			<div className="container flex flex-col items-center justify-center">
+			<div className="container flex flex-col items-center justify-center mx-auto">
 				<SocialLinks />
 				<span className="text-white text-sm">Kamil Rybiński &copy; {year}</span>
 			</div>
