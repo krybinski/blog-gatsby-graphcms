@@ -27,7 +27,7 @@ const Hero = () => {
 							About me
 						</Link>
 					</div>
-					<div className="mt-3 sm:mt-0 sm:ml-3">
+					<div className="ml-0 mt-2 sm:mt-0 sm:ml-5">
 						<Link
 							to="/contact"
 							className="w-full flex items-center justify-center px-6 py-2 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-3 md:text-lg md:px-10">

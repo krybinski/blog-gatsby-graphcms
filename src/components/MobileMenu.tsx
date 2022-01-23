@@ -11,7 +11,7 @@ const data: NavLink[] = [
 	},
 	{
 		id: 2,
-		text: 'About',
+		text: 'About me',
 		url: '/about',
 		last: true,
 	},
@@ -23,7 +23,7 @@ const data: NavLink[] = [
 	},
 ];
 
-const links = data.map((link) => <MobileMenuLink link={link} />);
+const links = data.map((link) => <MobileMenuLink key={link.id} link={link} />);
 
 interface Props {
 	isOpen: boolean;

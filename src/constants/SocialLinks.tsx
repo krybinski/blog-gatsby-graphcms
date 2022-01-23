@@ -21,7 +21,7 @@ const data: SocialLink[] = [
 	},
 ];
 
-const links = data.map((link) => <SocialLinkItem link={link} />);
+const links = data.map((link) => <SocialLinkItem key={link.id} link={link} />);
 
 interface Props {}
 
