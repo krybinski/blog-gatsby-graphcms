@@ -16,6 +16,7 @@ const Posts: React.FC<Props> = () => {
 					title
 					shortDescription
 					slug
+					createdAt
 				}
 			}
 		}
