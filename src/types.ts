@@ -5,6 +5,7 @@ export type Post = {
 	content: {
 		html: string;
 	};
+	shortDescription: string;
 };
 
 export type PostsData = {

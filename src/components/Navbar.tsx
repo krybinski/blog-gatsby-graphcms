@@ -7,7 +7,7 @@ const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<nav className="bg-white border-gray-200 px-2 sm:px-4 py-5 dark:bg-gray-700">
+		<nav className="bg-white border-gray-200 px-4 sm:px-6 py-5 dark:bg-gray-700">
 			<div className="container flex flex-wrap justify-between items-center mx-auto">
 				<NavLogo />
 				<MobileButton isOpen={isOpen} toggle={(value) => setIsOpen(value)} />
