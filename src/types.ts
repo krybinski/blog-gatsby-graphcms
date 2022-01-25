@@ -6,6 +6,7 @@ export type Post = {
 		html: string;
 	};
 	shortDescription: string;
+	createdAt: Date;
 };
 
 export type PostsData = {
